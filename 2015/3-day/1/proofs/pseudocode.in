@@ -1,0 +1,14 @@
+create hist.file
+
+step0: (x,y) = (0,0)
+for line in file; do
+	# step0: add the increment vector in cases:
+	if case
+  case upwd: (x,y) = (x,y) + (0,1)
+  case down: (x,y) = (x,y) + (0,-1)
+  case righ: (x,y) = (x,y) + (1,0)
+  case left: (x,y) = (x,y) + (-1,0)
+  if (x,y) is not in hist.file
+		write (x,y) on hist.file
+
+wc -l hist.file

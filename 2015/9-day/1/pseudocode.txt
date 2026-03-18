@@ -1,0 +1,31 @@
+# create file visited
+# create file unvisited
+
+# for x in [0-n]: 
+# for y in [0-n] \ {x}:
+#     dist: x -> y;
+    # i.e.
+    # dist-0: x -> 0;
+    # dist-1: x -> 1;
+    # ...
+    # dist-n: x -> n;
+# sort by distance
+# if y not in unvisited:
+#    write y on visited;
+#    write  dist:x->y on distances;
+#    remove y on unvisited.
+#
+
+a-e-d-f-b-c
+A  B  C  D  E  F
+x  x  x  x  0  x A
+   x  0  x  x  0 B
+      x  x  x  x C
+         x  0  0 D
+            x  x E
+               x F
+
+# c1=$(head)
+# info bash break
+# info bash for
+# 

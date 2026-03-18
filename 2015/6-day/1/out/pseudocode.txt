@@ -1,0 +1,24 @@
+
+set (x1,x2) and (y1,y2) = (0,0);
+
+# sed 's/(.*)\s(\d),(\d)through (\d),(\d)/x1=\1;x2=\2;x3=\3;x4=4;'
+
+# grid:   Z2 ^ 1000 x Z2 ^ 1000 
+# we have to count the number of lights on at each step.
+
+lights_on=0;
+
+for line in input.txt; do
+  let $A $B $C $D;
+  read line > 'toogle (\d),(\d) through (\d),(\d)' as 'A,B,C,D';
+  case (grep '^\S\+\d' $line):
+  "toogle":    # +1
+      lights_on = lights_on + 
+  "turn on":   # max(,1)
+  "turn off":  # min(,1)
+  # we have to reference the previous lights.
+  x1=$A;
+  x2=$B;
+  x3=$C;
+  x4=$D;
+done
