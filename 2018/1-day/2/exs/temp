@@ -1,0 +1,20 @@
+
+# while [ "$rep" == "" ]; do
+	# for num in $(cat $input); do
+# 
+		# echo $sum >> out/hist;
+		# echo "WRITED HIST: $sum";
+# 
+		# sum=$((sum+num));
+		# echo "MAKE SUM: $sum"
+# 
+		# echo "doing grep"
+		# grep "$sum" out/hist;
+		# echo "finalizing grep"
+# 
+		# rep=$(grep "$sum" out/hist);
+		# echo "UPDATE REP: $rep";
+# 
+	# done
+	# wc -l out/hist;
+# done

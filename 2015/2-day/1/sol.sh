@@ -16,7 +16,7 @@ for i in $(seq $nbox); do
 	a=$(head -n+$i out/col1.txt | tail -1);
 	b=$(head -n+$i out/col2.txt | tail -1);
 	c=$(head -n+$i out/col3.txt | tail -1);
-	echo -n -e $a "\n" $b "\n" $c | sort -n -r | tail -2 | tr -d ' ' | tr '\n' '*' | sed 's/*$//' >> out/min.txt;
+	echo -n -e $a "\n" $b "\n" $c | sort -n | head -2 | tr -d ' ' | tr '\n' '*' | sed 's/*$//' >> out/min.txt;
 	echo "done $i";
 	echo "" >> out/min.txt;
 done;
@@ -24,12 +24,13 @@ done;
 touch out/pasted.txt;
 paste --delimiter='+' out/first.op.txt out/min.txt > out/pasted.txt;
 
-num=0;
+# fljsdakfñlsajfñal ñjñlkj añ lkja ñlakfj añlk jañ lkajañl
+sum=0;
 for i in $(seq $nbox); do
 	exp=$(head -n+$i out/pasted.txt | tail -n 1);
-	echo $(( $exp ));
-	num=$(( $num + $exp ));
-	echo $num;
+	# echo $(( $exp ));
+	sum=$(( $sum + $exp ));
+	echo $sum;
 done
-echo "solucion: " $num;
+echo "solucion: " $sum;
 # 1586300 

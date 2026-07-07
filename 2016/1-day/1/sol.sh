@@ -4,17 +4,17 @@
 
 # cat input.txt | tr " " "\n" | tr -d , > out/instr.txt;
 
-eyes=0
+eyes=0;
 # : eyes : 
 #    0
 # 3     1
 #    2
 
-xpos=0
-ypos=0
+xpos=0;
+ypos=0;
 
 for word in $(cat input.txt | tr -d ,); do
-	direct=$(echo $word | cut -c1);
+	direct=$(echo $word | head -c1);
 	length=$(echo $word | cut -c1 --complement);
 	echo -n "($xpos,$ypos) + $word : ";
 	case $direct in
