@@ -7,8 +7,7 @@ grep -o "adventofcode.*" $HOME/.local/share/lf/tags | \
  	tree --fromfile | \
 	grep -v "[[:digit:]]\{4\}:\*" | \
 	grep -v "directories" | \
-	grep -v "\-day:\*$" | \
-	>> README.txt;
+	grep -v "\-day:\*$" >> README.txt;
 # do the git stuff
 git add .
 read -p "Message to commit: " msg;
