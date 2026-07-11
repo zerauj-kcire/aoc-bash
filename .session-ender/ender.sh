@@ -6,5 +6,5 @@ grep -o "adventofcode.*" $HOME/.local/share/lf/tags | sort -n | tree --fromfile 
 git add .
 read -s -p "Message to commit: " msg;
 git commit -m "$msg";
-cat $HOME/.config/token-git | tr -d "\n" | wl-copy;
+cat $HOME/.config/token-git.txt | tr -d "\n" | wl-copy;
 git push origin master;
