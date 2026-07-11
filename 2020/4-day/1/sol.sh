@@ -16,7 +16,7 @@ for file in out/sep/*; do
 	# cid=$(grep -c "cid" $file);
 	sum=$(( byr+iyr+eyr+hgt+ecl+pid+hcl ));
 	# echo $sum;
-	[ $sum -eq 7 ] && echo "ONE REG" >> out/results
+	[ $sum -eq 7 ] && echo "ONE REG" >> out/results;
 done
 
 wc -l out/results;
