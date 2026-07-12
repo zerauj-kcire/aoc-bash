@@ -4,7 +4,7 @@
 mkdir out;
 
 input="input.in";
-N=40;
+N=50;
 # input="try";
 # N=5;
 

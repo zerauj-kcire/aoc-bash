@@ -21,3 +21,7 @@ cut -d' ' -f1 out/input.cols.txt >> out/instr.txt;
 for i in $(seq $(wc -t --total=only input.txt)); do
 done
 
+# its a rectangular automaton.
+# very cost memory for the gnu utils.
+# mostly because the columns 
+# the rows are easily handled.

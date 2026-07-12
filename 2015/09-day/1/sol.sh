@@ -10,3 +10,4 @@ mkdir -p out/;
 num=$(wc -l out/cities.txt);
 cat out/cities.txt >> out/unvisited.txt;
 
+# check the pseudocode file to see my attempt.

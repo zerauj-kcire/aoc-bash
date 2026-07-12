@@ -10,3 +10,7 @@ echo $a $b $((a-b));
 # printf "$(cat out/no-quotes.txt)" >> out/clean.file.in;
 # b=$(wc -m --total=only out/clean.file.in);
 # echo $a $b $((a-b));
+#
+# one should be able to use the printf command
+# or the print command, to manipulate the ascii characters by their representation
+# currently, i have no time to see the info pages about it.
