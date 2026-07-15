@@ -24,7 +24,6 @@ done;
 touch out/pasted.txt;
 paste --delimiter='+' out/first.op.txt out/min.txt > out/pasted.txt;
 
-# fljsdakfñlsajfñal ñjñlkj añ lkja ñlakfj añlk jañ lkajañl
 sum=0;
 for i in $(seq $nbox); do
 	exp=$(head -n+$i out/pasted.txt | tail -n 1);
