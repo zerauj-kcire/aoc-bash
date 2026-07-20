@@ -11,6 +11,7 @@ N=50;
 cp $input out/1;
 for i in $(seq $N); do
 	cat out/$i | sed "s/./&\n/g" | uniq -c | tr -d " \t" | sed '/^1$\|^$/d' | tr -d "\n" > out/$((i+1));
+	echo "done $i";
 done
 # head out/*;
 wc -c out/$((N+1)) --total=only | numfmt --grouping;
