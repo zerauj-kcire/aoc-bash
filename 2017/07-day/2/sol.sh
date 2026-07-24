@@ -9,7 +9,7 @@ function createsubdirs() {
 }
 
 function descendtree() {
-	newlist=$(ls)
+	newlist=$(ls) # todo.
 	createsubdirs()
 	descendtree()
 }

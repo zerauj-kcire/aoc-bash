@@ -9,3 +9,7 @@ echo -n $line | tr -d "-" | sed "s/[[:digit:]].\+//g;s/./&\n/g" | sort | uniq -c
 echo ""
 # echo -n $line | tr -d "-" | sed "s/[[:digit:]].\+//g;s/./&\n/g" | sort | uniq -c | sort -nr | sed "s/^\s\+//g"
 # echo -n $line | tr -d "-" | sed "s/[[:digit:]].\+//g;s/./&\n/g" | sort | uniq -c | sort -nr | sed "s/^\s\+//g" | cut -d" " -f2 | tr -d "\n";
+
+# echo -n "notarealroom" | sed "s/./&\n/g" | sort | uniq -c | sort -r -k ...
+# see info sort 
+# /Historical
