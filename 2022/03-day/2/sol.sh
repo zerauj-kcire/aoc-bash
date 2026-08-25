@@ -3,18 +3,26 @@
 [ -d out ] && rm -r out;
 mkdir out;
 
-# input="input.txt";
-input="try";
+input="input.txt";
+# input="try";
+numrows=$(wc -l $input --total=only);
+digits=${#numrows};
 
-split -l 3 -d $input out/x;
+split -l 3 -d -a $digits $input out/x;
+for dir in out/*; do
+	file=$(basename $dir);
+	dir="out/d-$file";
+	mkdir -p $dir;
+	mv out/$file $dir/;
+	split -l 1 -d -a 1 $dir/$file $dir/p;
+done
 
-# for line in $(cat $input); do
-	# length=${#line};
-	# mid=$((length / 2));
-	# fh=$(echo $line | cut -c1-$mid);
-	# sh=$(echo $line | cut -c$((mid+1))-$length);
-	# cat <(echo $fh | sed "s/./&\n/g" | sort | uniq) <(echo $sh | sed "s/./&\n/g" | sort | uniq) | sort | uniq -d >> out/rep;
-# done
+for dir in out/d-*; do
+	for i in $(seq 0 2); do
+		sed "s/./&\n/g" $dir/p$i | sort | uniq > $dir/u$i;
+	done
+	cat $dir/u* | sort | uniq -c | sort -rk 2n,2 | head -1 | tr -d " " | cut -c2 >> out/rep;
+done
 
 # it remains to do the substitutions of letters to numbers and add them up.
 
