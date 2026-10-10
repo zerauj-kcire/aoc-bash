@@ -16,4 +16,5 @@ git commit -m "$msg";
 # the token contains the stupid (long) password of github.
 cat $HOME/.config/token.git.txt | tr -d "\n" | wl-copy;
 git push origin master;
+ps aux | grep wl-copy;
 exit 0;

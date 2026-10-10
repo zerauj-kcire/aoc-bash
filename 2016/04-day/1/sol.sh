@@ -1,15 +1,17 @@
 #!/bin/bash
 
-rm -r out/;
-mkdir -p out/;
+[ -d out ] && rm -r out;
+mkdir out;
 
-line="not-a-real-room404[oarel]"
-# esto ordena a las letras según su cantidad de apariciones.
-echo -n $line | tr -d "-" | sed "s/[[:digit:]].\+//g;s/./&\n/g" | sort | uniq -c | sort -nr | tr -d " "
-echo ""
-# echo -n $line | tr -d "-" | sed "s/[[:digit:]].\+//g;s/./&\n/g" | sort | uniq -c | sort -nr | sed "s/^\s\+//g"
-# echo -n $line | tr -d "-" | sed "s/[[:digit:]].\+//g;s/./&\n/g" | sort | uniq -c | sort -nr | sed "s/^\s\+//g" | cut -d" " -f2 | tr -d "\n";
+# input="input.txt";
+input="ex";
 
-# echo -n "notarealroom" | sed "s/./&\n/g" | sort | uniq -c | sort -r -k ...
-# see info sort 
-# /Historical
+for line in $(cat $input); do
+	fp=$(echo $line | tr -d "-" | cut -d"[" -f1);
+	sp=$(echo $line | cut -d"[" -f2 | tr -d "]");
+	num=$(echo $fp | tail -c4);
+	echo $fp | sed "s/./&\n/g" | head -n-4 | sort | uniq -c | sort -k 1nr,2 | tr -d " " | cut -c2 | tr -d "\n" | head -c5;
+	# the remaining work is to check when the [....] is or not the given by the command.
+done
+
+# rm -r out;
