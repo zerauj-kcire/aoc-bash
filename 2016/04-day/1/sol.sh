@@ -11,9 +11,10 @@ for line in $(cat $input); do
 	sp=$(echo $line | cut -d"[" -f2 | tr -d "]");
 	num=$(echo $fp | tail -c4);
 	id=$(echo $fp | sed "s/./&\n/g" | head -n-4 | sort | uniq -c | sort -k 1nr,2 | tr -d " " | cut -c2 | tr -d "\n" | head -c5);
-	[ $id == $sp ] && echo "$num" >> out/real-rooms;
+	[ $id == $sp ] && echo "$num" >> out/real-ids && echo $line >> out/real-rooms;
+	echo done $num;
 done
 
-gawk '{s+=$1} END {print s}' out/real-rooms | numfmt --grouping;
+gawk '{s+=$1} END {print s}' out/real-ids | numfmt --grouping;
 
 # rm -r out;
