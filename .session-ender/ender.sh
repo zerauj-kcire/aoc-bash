@@ -1,13 +1,8 @@
 #!/bin/bash
 
 # update the solved problems
-rm README.txt;
-echo -e "SOLVED PROBLEMS: *\n" >> README.txt;
-grep -o "adventofcode.*" $HOME/.local/share/lf/tags | \
- 	tree --fromfile | \
-	grep -v "[[:digit:]]\{4\}:\*" | \
-	grep -v "directories" | \
-	grep -v "\-day:\*$" >> README.txt;
+grep -r "SOLVED" * | cut -d":" -f1 | tree -d --fromfile --compress=3 \
+	| pr -f -3 -h "CONTENTS" -o 8 > README.txt;
 # do the git stuff
 git add .
 read -p "Message to commit: " msg;
