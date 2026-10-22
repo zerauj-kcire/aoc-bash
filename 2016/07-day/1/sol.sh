@@ -8,3 +8,4 @@ wc -l out/refined.txt > out/ans.txt;
 cat out/ans.txt;
 cat out/ans.txt | wl-copy;
 read new;
+# SOLVED
