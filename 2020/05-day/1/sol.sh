@@ -14,3 +14,4 @@ for line in $(cat out/op); do
 	echo "$line" | bc >> out/results;
 done
 sort -rn out/results | head -1;
+# SOLVED

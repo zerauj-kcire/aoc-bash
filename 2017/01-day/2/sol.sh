@@ -22,3 +22,4 @@ awk " { sum+=\$1 } END {print 2*sum} " out/final.txt;
 # diff -q <(cat out/digits*) input.txt;
 # grep 929 input.txt;
 
+# SOLVED

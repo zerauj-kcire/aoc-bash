@@ -9,3 +9,4 @@ for i in $(seq $length); do
 done
 
 cat out/pswd.txt | tr -d "\n" > out/final.txt;
+# SOLVED

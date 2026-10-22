@@ -11,3 +11,4 @@ cat $input | tr -d "a-z" | sed "s/^\(.\).*\(.\)$/\1\2/g;s/^\(.\)$/\1\1/g" > out/
 gawk '{sum+=$1} END {print sum}' out/digits | numfmt --grouping;
 
 # rm -r out;
+# SOLVED

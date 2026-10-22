@@ -16,3 +16,4 @@ done
 
 cat out/secf/* > out/final;
 cut -c1 out/final | grep -c "#";
+# SOLVED

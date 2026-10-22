@@ -23,3 +23,4 @@ done
 echo $((index + 3));
 
 # rm -r out;
+# SOLVED

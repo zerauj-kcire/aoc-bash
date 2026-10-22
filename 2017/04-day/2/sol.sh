@@ -18,3 +18,4 @@ for i in $(seq $max); do
 	echo "COUNT: $count";
 	rm out/words.txt;
 done
+# SOLVED

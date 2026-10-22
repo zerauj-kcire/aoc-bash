@@ -25,3 +25,4 @@ done
 echo "FINAL SUM:";
 echo "$(cat out/results | tr "\n" "+")0" | bc;
 # the for loop has to be done by the neartick, not on the conditions.
+# SOLVED

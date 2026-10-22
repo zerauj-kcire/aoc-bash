@@ -22,3 +22,4 @@ echo "LETTERS:"
 cat out/final;
 echo "ANS:";
 sort -n final | head -1;
+# SOLVED

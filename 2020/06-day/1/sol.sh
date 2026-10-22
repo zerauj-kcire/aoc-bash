@@ -11,3 +11,4 @@ for file in out/grps/*; do
 	sed "s/./&\n/g" $file | sort -u | uniq -u | sed "/^$/d" | wc -l>> out/results;
 done
 echo "$(cat out/results | tr "\n" "+")0" | bc;
+# SOLVED

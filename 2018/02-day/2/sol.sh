@@ -10,3 +10,4 @@ for i in $(seq $(wc -L --total=only $input)); do
 done
 
 sort out/* | uniq -c | tr -d "\t " | sort -n | tail -1 | tr -d "2.";
+# SOLVED

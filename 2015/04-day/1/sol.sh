@@ -23,3 +23,4 @@ echo "TERMINATE AT:" $fin;
 echo "SOLUTION: ";
 echo -n "$input$fin" | md5sum;
 # 
+# SOLVED

@@ -20,3 +20,4 @@ for file in out/sep/*; do
 done
 
 wc -l out/results;
+# SOLVED

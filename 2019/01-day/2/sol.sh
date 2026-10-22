@@ -22,3 +22,4 @@ for item in $(cat out/reg); do
 	echo $final;
 done
 echo "FINAL FINAL:" $(numfmt --grouping $final);
+# SOLVED

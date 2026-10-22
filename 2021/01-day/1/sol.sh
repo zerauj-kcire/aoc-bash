@@ -15,3 +15,4 @@ done
 wc -l out/results;
 # errors=$(wc -l out/results --total=only);
 # echo "SOL: " $((max - errors -1 ));
+# SOLVED

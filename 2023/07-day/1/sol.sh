@@ -81,3 +81,4 @@ cat <(sort  out/types/five) <(sort  out/types/four) <(sort  out/types/house) \
 tac out/sorted | gawk '{s+=NR * $2} END {print s}' | numfmt --grouping;
 
 # rm -r out;
+# SOLVED

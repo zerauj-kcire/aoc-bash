@@ -38,3 +38,4 @@ done
 finx="${xpos/#-}";
 finy="${ypos/#-}";
 echo " FINAL POS:  ($xpos,$ypos) : " $((finx + finy));
+# SOLVED

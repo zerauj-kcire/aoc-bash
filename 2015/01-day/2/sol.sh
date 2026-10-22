@@ -16,3 +16,4 @@ for i in $(seq $steps); do
 done;
 echo $santa;
 # 1783
+# SOLVED

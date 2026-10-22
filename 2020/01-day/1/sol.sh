@@ -22,3 +22,4 @@ done
 
 prod=$(echo "$(cat out/$N) * $(cat out/$M)" | bc);
 echo "out/$N * out/$M = $(cat out/$N) * $(cat out/$M) = $prod";
+# SOLVED

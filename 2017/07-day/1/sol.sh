@@ -11,3 +11,4 @@ grep -o "\<[a-z]\+\>" input.txt | sort | uniq -c | sort -n | head -1 | grep -o "
 # done
 # 
 # echo $final;
+# SOLVED

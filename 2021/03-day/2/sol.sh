@@ -34,3 +34,4 @@ done
 
 co2=$(echo "ibase=2;$(cat $currin | tr -d "\n");obase=10" | bc);
 echo $o2 $co2 "RESULT:" $((o2*co2));
+# SOLVED

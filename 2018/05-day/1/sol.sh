@@ -26,3 +26,4 @@ while [ $dif -ne 0 ]; do
 	i=$((i+1));
 done
 wc -m out/fil* | sort -n | head -2 | tail -1;
+# SOLVED

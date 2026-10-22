@@ -20,3 +20,4 @@ cat out/hist.santa.file out/hist.robot.file >> out/pasted.file;
 sort -u out/pasted.file > out/sorted.file;
 uniq -u out/sorted.file > out/uniq.file;
 wc -l out/uniq.file;
+# SOLVED

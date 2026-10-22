@@ -24,3 +24,4 @@ epsilon=$((total - gamma));
 # echo $gamma $total $epsilon;
 echo "RESULT:";
 echo $((gamma*epsilon)) | numfmt --grouping;
+# SOLVED

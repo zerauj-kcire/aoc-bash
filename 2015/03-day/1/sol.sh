@@ -27,3 +27,4 @@ done
 sort -u out/hist.file > out/uniq.file;
 uniq -u out/uniq.file | wc -l;
 
+# SOLVED

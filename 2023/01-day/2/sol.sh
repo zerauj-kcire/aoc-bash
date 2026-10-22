@@ -18,3 +18,4 @@ cat out/clean | tr -d "a-z" | sed "s/^\(.\).*\(.\)$/\1\2/g;s/^\(.\)$/\1\1/g" > o
 gawk '{sum+=$1} END {print sum}' out/digits | numfmt --grouping;
 
 # rm -r out;
+# SOLVED

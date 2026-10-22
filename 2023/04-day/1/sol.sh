@@ -21,3 +21,4 @@ done
 grep -v "^0$" out/pow | gawk '{s+=2^($1-1)} END {print s}' | numfmt --grouping;
 
 # rm -r out;
+# SOLVED

@@ -16,3 +16,4 @@ twos=$(grep -o "2" $minfile | wc -l);
 
 echo "$ones x $twos = " $(expr "$ones" "*" "$twos");
 
+# SOLVED

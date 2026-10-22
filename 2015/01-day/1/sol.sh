@@ -7,3 +7,4 @@ down=$(grep -o ")" input.txt | wc -l)
 
 echo $((up - down))
 # 232
+# SOLVED

@@ -43,3 +43,4 @@ done
 
 cat out/results;
 echo "$(cat out/results | tr "\n" "*")1" | bc | numfmt --grouping;
+# SOLVED

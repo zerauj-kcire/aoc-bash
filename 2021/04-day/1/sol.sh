@@ -43,3 +43,4 @@ winsum=$(echo "$(grep -o "[[:digit:]][[:digit:]]" $winnerbingo | tr "\n" "+")0" 
 echo $call $winsum;
 echo "RESULT: ";
 echo $((call * winsum)) | numfmt --grouping;
+# SOLVED

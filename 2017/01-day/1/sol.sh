@@ -13,3 +13,4 @@ cat input.txt <(head -c1 input.txt)  \
 	| cut -c1 --complement  \
 	| rev  \
 	| bc;
+# SOLVED

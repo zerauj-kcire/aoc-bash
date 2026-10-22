@@ -26,3 +26,4 @@ done
 
 sort -n out/one-req.txt | cut -d' ' -f1 > out/numbers.txt;
 grep -E -o -z "(.*)[[:space:]]\1[[:space:]]\1" out/numbers.txt | uniq;
+# SOLVED

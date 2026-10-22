@@ -18,3 +18,4 @@ grep "^\([a-z]\+\)\s\([a-z]\+\s\)*\1" input.txt
 # or the most elegant one:
 
 grep -v "\b\(\w\+\)\b.*\b\1\b" input.txt | wc -l;
+# SOLVED

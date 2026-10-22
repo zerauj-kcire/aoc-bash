@@ -36,3 +36,4 @@ sed "s/a/1/;s/b/2/;s/c/3/;s/d/4/;s/e/5/;s/f/6/;s/g/7/;s/h/8/;s/i/9/;s/j/10/;s/k/
 gawk '{s+=$1} END {print s}' out/nums | numfmt --grouping;
 
 # rm -r out;
+# SOLVED

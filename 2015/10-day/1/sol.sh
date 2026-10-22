@@ -14,3 +14,4 @@ for i in $(seq $N); do
 done
 # head out/*;
 wc -c out/$((N+1)) --total=only | numfmt --grouping;
+# SOLVED

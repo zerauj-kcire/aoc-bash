@@ -19,3 +19,4 @@ for rule in $(cat out/subs.txt); do
 done
 
 sort -u out/molecules.txt | uniq -u | wc -l > ans.txt;
+# SOLVED

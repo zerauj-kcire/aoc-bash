@@ -16,3 +16,4 @@ eigh=$(grep -o "\<[a-g]\{7\}\>" out/output | wc -l);
 echo $ones $four $seve $eigh;
 echo "RESULT ":
 echo $((ones+four+seve+eigh)) | numfmt --grouping;
+# SOLVED

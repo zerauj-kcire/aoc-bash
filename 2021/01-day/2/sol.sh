@@ -18,3 +18,4 @@ for i in $(seq 2 $max); do
 done
 
 wc -l out/results;
+# SOLVED

@@ -9,3 +9,4 @@ for i in $(seq $n); do
 done
 
 cat out/passwd.txt | tr -d "\n" > out/ans.txt;
+# SOLVED

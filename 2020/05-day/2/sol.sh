@@ -23,3 +23,4 @@ max=$(wc -l $input --total=only);
 head -$((max - 8)) out/sr | tail -$((max - 8*2)) > out/filtered;
 seq 54 983 | sort -nr > out/seq;
 diff out/seq out/filtered;
+# SOLVED

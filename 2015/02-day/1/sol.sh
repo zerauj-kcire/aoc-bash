@@ -33,3 +33,4 @@ for i in $(seq $nbox); do
 done
 echo "solucion: " $sum;
 # 1586300 
+# SOLVED

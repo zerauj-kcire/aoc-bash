@@ -6,3 +6,4 @@ for num in $(cat input.txt); do
 	echo $sum;
 done
 echo "FINAL SUM: " $sum;
+# SOLVED

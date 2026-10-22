@@ -23,3 +23,4 @@ for line in $(seq $(( 2*$nbox)) ); do
 	echo $num;
 done
 # 3737498
+# SOLVED

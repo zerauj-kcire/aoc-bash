@@ -15,3 +15,4 @@ echo "TOTAL: " $sum > ans.txt;
 
 # info expr length
 # info sed =
+# SOLVED

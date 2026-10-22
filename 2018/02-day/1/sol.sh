@@ -18,3 +18,4 @@ tws=$(grep "2" out/final | wc -l);
 trs=$(grep "3" out/final | wc -l);
 # echo "TRS: " $trs.
 echo "RESULT: " $((tws*trs));
+# SOLVED

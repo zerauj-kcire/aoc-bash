@@ -15,3 +15,4 @@ done
 cut -d" " -f2 out/totals | sort -nr | head -1 | numfmt --grouping;
 
 # rm -r out;
+# SOLVED

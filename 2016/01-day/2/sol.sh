@@ -61,3 +61,4 @@ line=$(awk '{ if(seen[$0]) { print; exit } seen[$0] = 1 }' out/path.txt | tr -d 
 x=$(echo $line | cut -d, -f1);
 y=$(echo $line | cut -d, -f2);
 expr $x "+" $y;
+# SOLVED

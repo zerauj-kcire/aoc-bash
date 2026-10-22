@@ -25,3 +25,4 @@ done
 
 echo "RESULT: ";
 echo $((hpos*depth)) | numfmt --grouping;
+# SOLVED

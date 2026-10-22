@@ -16,3 +16,4 @@ for line in $(cat out/m2); do
 	sum=$(( sum + line ));
 done
 echo "SUM: " $(echo $sum | numfmt --grouping);
+# SOLVED

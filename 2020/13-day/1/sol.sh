@@ -22,3 +22,4 @@ grep -v "^:" out/gapp | sort -n | head -1 > out/minute;
 fminute=$(cut -d":" -f1 out/minute);
 fmult=$(cut -d":" -f3 out/minute);
 echo "FINAL RESULT: ($fminute - $sminute) * $fmult = " $(( (fminute - sminute) * fmult ));
+# SOLVED

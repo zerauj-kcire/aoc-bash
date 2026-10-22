@@ -15,3 +15,4 @@ done
 cut -d" " -f2 out/totals | sort -nr | head -3 | gawk '{s+=$1} END {print s}' - | numfmt --grouping;
 
 # rm -r out;
+# SOLVED
